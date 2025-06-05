@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>梗瑞嘉航OL游戏官网</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<audio autoplay="" id="bgm" loop="" src="1748676850704.mp3"></audio>
+<div id="musicPrompt" style="display:none;position:fixed;top:40%;left:50%;transform:translate(-50%,-50%);
+background:#000;color:#fff;padding:15px 25px;border-radius:10px;z-index:9999;font-size:18px;">
+🔊 点击开启音乐
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var audio = document.getElementById("bgm");
+  var musicPrompt = document.getElementById("musicPrompt");
+  function tryPlay() {
+    audio.play().then(() => {
+      musicPrompt.style.display = "none";
+    }).catch(() => {
+      musicPrompt.style.display = "block";
+      document.body.addEventListener("click", function onceClick() {
+        audio.play();
+        musicPrompt.style.display = "none";
+        document.body.removeEventListener("click", onceClick);
+      });
+    });
+  }
+  tryPlay();
+});
+</script>
+
+<div class="container">
+<h1>梗瑞嘉航OL游戏官网</h1>
+<img alt="主角展示" class="hero" src="hero.jpg"/>
+<div class="menu">
+<button onclick="location.href='role.html'">进入</button>
+<button onclick="location.href='news.html'">新闻</button>
+<button onclick="location.href='download.html'">下载</button>
+<button onclick="location.href='kefu.html'">客服</button>
+</div>
+</div>
+</body>
+</html>
