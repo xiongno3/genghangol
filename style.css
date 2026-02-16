@@ -1,38 +1,17 @@
-
-body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom right, #1e3c72, #2a5298);
-    color: white;
-    font-family: "Arial", sans-serif;
-    text-align: center;
+body { margin: 0; padding: 0; 
+  background: linear-gradient(135deg, #d32f2f 0%, #ffc107 100%); 
+  color: #fff; 
+  font-family: "Arial", sans-serif; 
+  text-align: center;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><circle cx="30" cy="30" r="25" fill="rgba(255,215,0,0.1)"/><path d="M30 5 L35 25 L55 25 L40 35 L45 55 L30 45 L15 55 L20 35 L5 25 L25 25 Z" fill="rgba(255,215,0,0.2)"/></svg>');
+} 
+.container { padding: 20px; } 
+h1 { font-size: 28px; margin-bottom: 20px; text-shadow: 0 0 10px #ffd700; } 
+.hero { max-width: 100%; height: auto; border: 5px solid #ffd700; border-radius: 10px; box-shadow: 0 0 15px rgba(255,215,0,0.5); } 
+.menu { margin-top: 20px; } 
+.menu button { margin: 10px; padding: 10px 20px; font-size: 16px; border: none; 
+  background-color: #ffd700; color: #8b4513; border-radius: 8px; 
+  cursor: pointer; transition: all 0.3s; box-shadow: 0 3px 0 #8b4513;
 }
-.container {
-    padding: 20px;
-}
-h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-.hero {
-    max-width: 100%;
-    height: auto;
-    border: 5px solid white;
-    border-radius: 10px;
-}
-.menu {
-    margin-top: 20px;
-}
-.menu button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    background-color: #fdd835;
-    color: #333;
-    border-radius: 8px;
-    cursor: pointer;
-}
-audio {
-    margin-top: 20px;
-}
+.menu button:hover { transform: translateY(-2px); box-shadow: 0 5px 0 #8b4513; }
+audio { margin-top: 20px; filter: drop-shadow(0 0 5px #ffd700); }
