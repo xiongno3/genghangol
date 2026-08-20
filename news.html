@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>梗瑞嘉航OL - 新闻</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 40%, #bfdbfe 75%, #eff6ff 100%);
+            color: white;
+            padding: 30px 15px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            animation: fadeInDown 0.7s ease-out;
+        }
+        img {
+            max-width: 90%;
+            margin: 15px auto;
+            display: block;
+            border: 3px solid rgba(255,255,255,0.7);
+            border-radius: 12px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+            transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.4s ease;
+            animation: fadeIn 1s ease-out 0.3s both;
+        }
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 36px rgba(0,0,0,0.2);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 28px;
+            font-size: 16px;
+            font-weight: bold;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.8);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+            animation: fadeInUp 0.8s ease-out 0.5s both;
+        }
+        .btn:hover {
+            background: white;
+            color: #1e3a8a;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(59,130,246,0.4);
+        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+<h2>梗瑞嘉航OL全国代表大会在屯家范镇举行会议审议通过了如下文件</h2>
+<img src="images/news_notice.jpg" style="max-width: 100%; height: auto;">
+
+    <br><br>
+    <button class="btn" onclick="location.href='index.html'">返回首页</button>
+</body>
+</html>
